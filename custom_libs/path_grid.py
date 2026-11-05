@@ -34,7 +34,7 @@ class PathGrid():
         if dx != 0:
             y = y0
             p = 2*dy - dx
-            for i in range(dx+1)
+            for i in range(dx+1):
                 self.grid[x0+i, y]
                 if p >= 0:
                     y += dir
@@ -55,7 +55,7 @@ class PathGrid():
         if dy != 0:
             x = x0
             p = 2*dx - dy
-            for i in range(dy+1)
+            for i in range(dy+1):
                 self.grid[x, y0+i]
                 if p >= 0:
                     x += dir
