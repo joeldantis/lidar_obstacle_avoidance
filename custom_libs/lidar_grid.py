@@ -40,6 +40,6 @@ class LidarOccupancyGrid:
         self.grid[self.center, self.center] = 50
 
     def dest(self, dist: float):
-        row = round(dist/self.resolution)
+        row = self.center - (dist/self.resolution)
         col = self.center
         self.grid[row, col]
